@@ -126,18 +126,18 @@ body{
    color: rgb(197, 202, 206);
    margin-bottom: 24px;
 }
-.register .social{
+.register .social,.social-after{
    margin-left: -20px;
 }
-.register .social a{
+.register .social a,.social-after a{
    margin-left: 20px;
 }
-.register .social  i{
+.register .social  i,.social-after i{
    color:white;
    font-size: 15px;
 }
 
-.register .social a:hover i
+.register .social a:hover i,.social-after a:hover i
 {
    color: red;
 }
@@ -266,5 +266,7 @@ body{
    color: red;
 }
 
- 
+.signup-form-other{
+   display: none;
+}
  
