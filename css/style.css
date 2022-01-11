@@ -771,6 +771,31 @@ header.header-sm{
 .icon-star{
     color: #10746a;
 }
+.open-modal2-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 130px;
+    border-style: none;
+    background-color: #20d6c4;
+    height: 31px;
+    font-size: 15px;
+    text-align: right;
+    color: rgba(0,0,0,0.65);
+    font-weight: 700;
+    border-radius: 0 0 0 30px;
+    transition-property: background-color;
+    transition-duration: 1.8s;
+    transition-property: color;
+    transition-duration: 1s;
+    
+
+}
+.open-modal2-btn:hover{
+    font-weight: 600;
+    color: #fff;
+    background-color: #128b7f;
+}
 /*begin first modal*/
 .gallery-modal{
     z-index: 3;
@@ -779,11 +804,11 @@ header.header-sm{
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0,0,0,0.81);
+    background-color: rgba(0,0,0,0.7);
     display: none;
     align-items: center;
     justify-content: center;
-    animation: img-modal-background ease-in-out 0.2s;
+    animation: img-modal-background ease 0.4s;
 }
 .galModal-1.open-gallery-modal,
 .galModal-2.open-gallery-modal,
@@ -798,7 +823,7 @@ header.header-sm{
 }
 
 .Header-img-modal{
-    max-width: 800px;
+    max-width: 960px;
     margin-top: 77px;
     border-radius: 5px;
     border: 1px solid #053a35;
@@ -870,7 +895,7 @@ header.header-sm{
     background: #fff;
     width: 770px;
     border-radius: 0 0 100px 100px;
-    max-width: calc(100% - 32px);
+    max-width: calc(100% - 16px);
     min-height: 200px;
     position: relative;
     margin-top: 2em;

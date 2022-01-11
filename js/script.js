@@ -68,12 +68,12 @@ window.addEventListener('resize', () => {
             allImgmodal.classList.remove('open-gallery-modal')
         }
     }
-    function openScrollMouse() {
+    /*function openScrollMouse() {
         document.getElementById("bn").style.overflow='auto';
-    }
+    }*/
 
     outImgs.addEventListener('click',outimg)
-    outImgs.addEventListener('click',openScrollMouse)
+    //outImgs.addEventListener('click',openScrollMouse)
 
     function openimg1(){
         galModal1.classList.add('open-gallery-modal')
@@ -136,6 +136,9 @@ const secondItems=document.querySelectorAll('.js-second-item')
                 document.getElementById("amount").innerHTML="";
                 document.getElementById("tax").innerHTML="";
                 document.getElementById("total-money").innerHTML="";
+                document.getElementById("amount9").innerHTML="";
+                document.getElementById("tax9").innerHTML="";
+                document.getElementById("total-money9").innerHTML="";
                 
 
                 var checkInput=document.getElementsByName("pay");
@@ -145,9 +148,9 @@ const secondItems=document.querySelectorAll('.js-second-item')
                 }
             }
             modalClose.addEventListener('click',resetInput)
-            modalClose.addEventListener('click',openScrollMouse)
+            //modalClose.addEventListener('click',openScrollMouse)
             secondPlace.addEventListener('click',resetInput)
-            secondPlace.addEventListener('click',openScrollMouse)
+            //secondPlace.addEventListener('click',openScrollMouse)
             // nổi bọt
             submitModal.addEventListener('click',function(event){event.stopPropagation()})
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -163,6 +166,9 @@ const removeCheck1=document.querySelector('.modal-input')
         document.getElementById("amount").innerHTML="";
         document.getElementById("tax").innerHTML="";
         document.getElementById("total-money").innerHTML="";
+        document.getElementById("amount9").innerHTML="";
+        document.getElementById("tax9").innerHTML="";
+        document.getElementById("total-money9").innerHTML="";
     }
 
     removeCheck1.addEventListener('click',resetMoney1)
@@ -200,7 +206,7 @@ const removeCheck1=document.querySelector('.modal-input')
         if (check1==true){document.getElementById("pay-error").innerHTML=""}
         
         if (x>0 && x<=10 && check1==true){
-            alert("Dịch bệnh thì tràn lan, đi cc! Để tiền mà đi chơi Noel với ny.")
+            alert("Dịch bệnh thì tràn lan, đi cc! Để tiền mà đi chơi Tết với ny.")
         }
         }
 
@@ -467,6 +473,6 @@ const removeCheck1=document.querySelector('.modal-input')
     //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     
-    function bruhha() {
+   /* function bruhha() {
         document.getElementById("bn").style.overflow='hidden'
-    }
+    }*/
