@@ -17,7 +17,7 @@
         width: 100%;
     }
     .login-container{
-        height: 800px;
+        height: 1000px;
     }
     .spacer{
         display: none;
@@ -40,7 +40,50 @@
     .social-after{
         margin-left: 40%;    
     }
-    
+    .modal-card-mb{
+        display: block;
+    }
+    .modal-card-pc{
+        display: none;
+    }
+    #card-item-info{
+        width: 90%;
+    }
+    .modal-header{
+        font-size: 20px;
+    }
+    .modal-header-detail{
+        font-size: 10px;
+    }
+    .total-list{
+        display: none;
+    }
+    .total-list-mb{
+        display: block;
+    }
+    .all-pay-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 62px 23px;
+    }
+    #card-item-info{
+    width: 93%;
+    border: 2px solid #1ec6b6;
+    padding: 3px;
+    border-radius: 3px;
+    }
+    .modal-label{
+        margin-bottom: 3px;
+    }
+    .select-place-detail{
+        margin-bottom: 18px;
+    }
+    .mb-first{
+    border: 2px solid #1ec6b6;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    }
 }
 @media only screen and (min-width:740px )and( max-width: 1023px){
     

@@ -16,6 +16,7 @@
         <link rel = "stylesheet" href = "css/utility.css">
         <link rel = "stylesheet" href = "css/style.css">
         <link rel = "stylesheet" href = "css/responsive.css">
+        <link rel="stylesheet" href="css/reponsive-login.css">
     </head>
     <body>
         <div id="main">
@@ -529,32 +530,44 @@
                             <i class="icon-detail fas fa-hand-holding-usd"></i>
                             Vui lòng chọn phương thức thanh toán:
                         </div>
-                        <div class="modal-card">
-                            <input id="checkCard card1" name="pay" type="radio" onclick="autoCalculate()">
-                            <label for="checkCard card1"><i class="card-icon fab fa-cc-visa"></i></label>
-                            <label for="checkCard card1"> thanh toán bằng thẻ Visa</label>
-                        </div>    
-                        <div class="modal-card">
-                            <input id="checkCard card2" name="pay" type="radio" onclick="autoCalculate()">
-                            <label for="checkCard card2"><i class="card-icon fab fa-cc-mastercard"></i></label>
-                            <label for="checkCard card2">thanh toán bằng thẻ Mastercard</label>
-                        </div>    
-                        <div class="modal-card">
-                            <input id="checkCard card3" name="pay" type="radio" onclick="autoCalculate()">
-                            <label for="checkCard card3"><i class="card-icon fab fa-cc-paypal"></i></label>
-                            <label for="checkCard card3">thanh toán bằng Paypal</label>
-                        </div>    
-                        <div class="modal-card">
-                            <input id="checkCard card4" name="pay" type="radio" onclick="autoCalculate()">
-                            <label for="checkCard card4"><i class="card-icon fab fa-cc-amazon-pay"></i></label>
-                            <label for="checkCard card4">thanh toán bằng Amazon pay</label>
-                        </div>    
-                        <div class="modal-card">
-                            <input id="checkCard card5" name="pay" type="radio" onclick="autoCalculate()">
-                            <label for="checkCard card5"><i class="card-icon far fa-credit-card"></i></label>
-                            <label for="checkCard card5">thanh toán bằng thẻ tín dụng khác</label>
+                        <div class="modal-card-mb">
+                            <select name="choose-card" id="card-item-info">
+                                <option value="1">thanh toán bằng thẻ Visa</option>
+                                <option value="2">thanh toán bằng thẻ Mastercard</option>
+                                <option value="3">thanh toán bằng Paypal</option>
+                                <option value="4">thanh toán bằng Amazon pay</option>
+                                <option value="5">thanh toán bằng thẻ tín dụng khác</option>
+                            </select>
+                        </div>
+                        <div class="modal-card-pc">
+                            <div class="modal-card">
+                                <input id="checkCard card1" name="pay" type="radio" onclick="autoCalculate()">
+                                <label for="checkCard card1"><i class="card-icon fab fa-cc-visa"></i></label>
+                                <label for="checkCard card1"> thanh toán bằng thẻ Visa</label>
+                            </div>    
+                            <div class="modal-card">
+                                <input id="checkCard card2" name="pay" type="radio" onclick="autoCalculate()">
+                                <label for="checkCard card2"><i class="card-icon fab fa-cc-mastercard"></i></label>
+                                <label for="checkCard card2">thanh toán bằng thẻ Mastercard</label>
+                            </div>    
+                            <div class="modal-card">
+                                <input id="checkCard card3" name="pay" type="radio" onclick="autoCalculate()">
+                                <label for="checkCard card3"><i class="card-icon fab fa-cc-paypal"></i></label>
+                                <label for="checkCard card3">thanh toán bằng Paypal</label>
+                            </div>    
+                            <div class="modal-card">
+                                <input id="checkCard card4" name="pay" type="radio" onclick="autoCalculate()">
+                                <label for="checkCard card4"><i class="card-icon fab fa-cc-amazon-pay"></i></label>
+                                <label for="checkCard card4">thanh toán bằng Amazon pay</label>
+                            </div>    
+                            <div class="modal-card">
+                                <input id="checkCard card5" name="pay" type="radio" onclick="autoCalculate()">
+                                <label for="checkCard card5"><i class="card-icon far fa-credit-card"></i></label>
+                                <label for="checkCard card5">thanh toán bằng thẻ tín dụng khác</label>
+                            </div>
                         </div>                          
                     </div>
+                    
                     <div class="select-place">
                         <div class="select-place-detail">
                             <i class="icon-detail fas fa-map-marker-alt"></i>
@@ -574,31 +587,55 @@
                             <option value="11"> 301.000đ/1 người | Sapa, Lào Cai</option>
                             <option value="12"> 345.000đ/1 người | Nhà Thờ Gỗ Kon Tum, Kon Tum</option>
                         </select>
-                        <div class="total-list">
-                            <div class="row">
-                                <div class="col Amount">
-                                    <i class="icon-money fas fa-circle"></i>
-                                    Thành Tiền:
-                                </div>
-                                <div class="col color-amount"><p  id="amount"></p></div>
-                            </div>
-                            <div class="row">
-                                <div class="col tax">
-                                    <i class="icon-money fas fa-circle"></i>
-                                    Thuế (10%):
-                                </div>
-                                <div class="col color-tax"><p id="tax"></p></div>
-                            </div>
-                            <div class="row">
-                                <div class="col total-money">
-                                    <i class="icon-detail fas fa-donate"></i>
-                                    Tổng Tiền:
-                                </div>
-                                <div class="col total-money2"><p id="total-money">0</p></div>
-                            </div>
-                        </div>
-                        <div class="clear"></div>
                     </div>
+                    <div class="total-list">
+                        <div class="money-info">
+                            <div class=" Amount">
+                                <i class="icon-money fas fa-circle"></i>
+                                Thành Tiền:
+                            </div>
+                            <div class=" color-amount"><p  id="amount"></p></div>
+                        </div>
+                        <div class="money-info">
+                            <div class=" tax">
+                                <i class="icon-money fas fa-circle"></i>
+                                Thuế (10%):
+                            </div>
+                            <div class=" color-tax"><p id="tax"></p></div>
+                        </div>
+                        <div class="money-info">
+                            <div class=" total-money">
+                                <i class="icon-detail fas fa-donate"></i>
+                                Tổng Tiền:
+                            </div>
+                            <div class="col total-money2"><p id="total-money">0</p></div>
+                        </div>
+                    </div>                    
+                </div>
+                
+                <div class="total-list-mb">
+                    
+                        <div class="money-info mb-first">
+                            <div class=" Amount">
+                                <i class="icon-money fas fa-circle"></i>
+                                Thành Tiền:
+                            </div>
+                            <div class="col color-amount"><p  id="amount"></p></div>
+                        </div>
+                        <div class="money-info">
+                            <div class=" tax">
+                                <i class="icon-money fas fa-circle"></i>
+                                Thuế (10%):
+                            </div>
+                            <div class="col color-tax"><p id="tax"></p></div>
+                        </div>
+                        <div class="money-info">
+                            <div class=" total-money">
+                                <i class="icon-detail fas fa-donate"></i>
+                                Tổng Tiền:
+                            </div>
+                            <div class="col total-money2"><p id="total-money">0</p></div>
+                        </div>
                     
                 </div>
                 
