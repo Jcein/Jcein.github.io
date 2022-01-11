@@ -84,6 +84,9 @@
     border-right: none;
     border-bottom: none;
     }
+    #pay-error{
+        display: none;
+    }
 }
 @media only screen and (min-width:740px )and( max-width: 1023px){
     
