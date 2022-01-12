@@ -77,7 +77,7 @@ window.addEventListener('resize', () => {
 
     function openimg1(){
         galModal1.classList.add('open-gallery-modal')
-    }
+    } 
     function openimg2(){
         galModal2.classList.add('open-gallery-modal')
     }
