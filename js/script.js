@@ -63,17 +63,22 @@ window.addEventListener('resize', () => {
     
     const outImgs=document.querySelector('.first-modal-container')
     const allImgmodals=document.querySelectorAll('.gallery-modal')
+    const notOutImgs=document.querySelectorAll('.Header-img-modal')
+        for( const notOutImg of notOutImgs) {
+            notOutImg.addEventListener('click',function(event){event.stopPropagation()})
+        }
     function outimg(){
         for( const allImgmodal of  allImgmodals){
             allImgmodal.classList.remove('open-gallery-modal')
+            
         }
     }
-    /*function openScrollMouse() {
+    function openScrollMouse() {
         document.getElementById("bn").style.overflow='auto';
-    }*/
+    }
 
     outImgs.addEventListener('click',outimg)
-    //outImgs.addEventListener('click',openScrollMouse)
+    outImgs.addEventListener('click',openScrollMouse)
 
     function openimg1(){
         galModal1.classList.add('open-gallery-modal')
@@ -150,9 +155,9 @@ const secondItems=document.querySelectorAll('.open-modal2-btn')
                 }
             }
             modalClose.addEventListener('click',resetInput)
-            //modalClose.addEventListener('click',openScrollMouse)
+            modalClose.addEventListener('click',openScrollMouse)
             secondPlace.addEventListener('click',resetInput)
-            //secondPlace.addEventListener('click',openScrollMouse)
+            secondPlace.addEventListener('click',openScrollMouse)
             // nổi bọt
             submitModal.addEventListener('click',function(event){event.stopPropagation()})
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -475,6 +480,6 @@ const removeCheck1=document.querySelector('.modal-input')
     //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
     
-   /* function bruhha() {
-        document.getElementById("bn").style.overflow='hidden'
-    }*/
+   function bruhha() {
+        document.getElementById("bn").style.overflow='hidden';
+    }

@@ -878,9 +878,10 @@ header.header-sm{
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: auto;
     background-color: rgba(0,0,0,0.7);
     display: none;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     animation: img-modal-background ease 0.4s;
 }
@@ -894,7 +895,7 @@ header.header-sm{
     max-width: calc(100% - 16px);
     min-height: 200px;
     position: relative;
-    margin-top: 2em;
+    margin-top: 5.5em;
     box-shadow: 0 0 100px rgba(0, 255, 234, 0.589);
     animation: openSecondModal ease 0.4s;
 }

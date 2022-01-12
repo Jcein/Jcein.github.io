@@ -69,14 +69,14 @@ button, input[type = "submit"]{
 }
 
 /* css stop transition and animation */
-/*.resize-animation-stopper *{
-    -webkit-animation: none!important;
-            animation: none!important;
+.resize-animation-stopper *{
+    /*-webkit-animation: none!important;
+            animation: none!important;*/
     -webkit-transition: none!important;
     -o-transition: none!important;
     transition: none!important;
 }
-*/
+
 .py-4{
     padding: 4rem 0;
 }
