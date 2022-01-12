@@ -784,12 +784,8 @@ header.header-sm{
     color: rgba(0,0,0,0.65);
     font-weight: 700;
     border-radius: 0 0 0 30px;
-    transition-property: background-color;
-    transition-duration: 1.8s;
     transition-property: color;
     transition-duration: 1s;
-    
-
 }
 .open-modal2-btn:hover{
     font-weight: 600;

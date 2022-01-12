@@ -116,7 +116,8 @@ window.addEventListener('resize', () => {
 //open payment
 //----------------------------------------------------------------------------------------------------------------------------------------------------------
 
-const secondItems=document.querySelectorAll('.js-second-item')
+const secondItems=document.querySelectorAll('.open-modal2-btn')
+const openByInfoS=document.querySelectorAll('.place-item-js')
             const secondPlace=document.querySelector('.js-second-modal-container')
             const modalClose=document.querySelector('.js-modal-close')
             
@@ -127,6 +128,9 @@ const secondItems=document.querySelectorAll('.js-second-item')
 
             for( const secondItem of secondItems){
                 secondItem.addEventListener('click',openSecondModal)
+            }
+            for( const openByInfo of openByInfoS){
+                openByInfo.addEventListener('click',openSecondModal)
             }
             function resetInput(){
                 secondPlace.classList.remove('openBtn');
