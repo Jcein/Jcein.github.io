@@ -1,0 +1,245 @@
+
+@media only screen and (max-width:352px){
+    .login-container{
+        padding: 0 ;
+    }
+    .form-info{
+        display: none !important;
+    }
+    .form-login{
+        width: 100%;
+        max-width: none;
+        padding-left: px;
+    }
+    body{
+        align-items:baseline;
+    }
+    .overlay{
+        width: 100%;
+    }
+    .login-container{
+        height: 1000px;
+    }
+    .spacer{
+        display: none;
+    }
+    .signup-form-other{
+        
+        display: block;
+    }
+    .signup-form-other{
+        margin-top: 50px;
+        display: flex;
+        position: relative;        
+    }
+    .signup-form-other >p{
+        color: rgb(190, 189, 187);
+        font-size: 14px;
+        position: absolute;
+        margin-top: 2px;
+    }
+    .social-after{
+        margin-left: 40%;    
+    }
+    .modal-card-mb{
+        display: block;
+    }
+    .modal-card-pc{
+        display: none;
+    }
+    #card-item-info{
+        width: 90%;
+    }
+    .modal-header{
+        font-size: 20px;
+    }
+    .modal-header-detail{
+        font-size: 10px;
+    }
+    .total-list{
+        display: none;
+    }
+    .total-list-mb{
+        display: block;
+    }
+    .all-pay-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 62px 23px;
+    }
+    #card-item-info{
+    width: 93%;
+    border: 2px solid #1ec6b6;
+    padding: 3px;
+    border-radius: 3px;
+    }
+    .modal-label{
+        margin-bottom: 3px;
+    }
+    .select-place-detail{
+        margin-bottom: 18px;
+    }
+    .mb-first{
+    border: 2px solid #1ec6b6;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    }
+    #pay-error{
+        display: none;
+    }
+    .total-money{
+        font-size: 15px;
+    }
+    .total-money2{
+        font-size: 16px;
+    }
+    .modal-body{
+        font-size: 12px;
+    }
+    .Amount{
+        padding-left: 22px;
+    }
+    .tax{
+        padding-left: 22px; 
+    }
+    .Click-out-img{
+        left: auto;
+        bottom: 0;
+        writing-mode: horizontal-tb;
+    }
+}
+@media only screen and (min-width:353px) and (max-width: 616px) {
+    .login-container{
+        padding: 0 ;
+    }
+    .form-info{
+        display: none !important;
+    }
+    .form-login{
+        width: 100%;
+        max-width: none;
+        padding-left: px;
+    }
+    body{
+        align-items:baseline;
+    }
+    .overlay{
+        width: 100%;
+    }
+    .login-container{
+        height: 1000px;
+    }
+    .spacer{
+        display: none;
+    }
+    .signup-form-other{
+        
+        display: block;
+    }
+    .signup-form-other{
+        margin-top: 50px;
+        display: flex;
+        position: relative;        
+    }
+    .signup-form-other >p{
+        color: rgb(190, 189, 187);
+        font-size: 14px;
+        position: absolute;
+        margin-top: 2px;
+    }
+    .social-after{
+        margin-left: 40%;    
+    }
+    .modal-card-mb{
+        display: block;
+    }
+    .modal-card-pc{
+        display: none;
+    }
+    #card-item-info{
+        width: 90%;
+    }
+    .modal-header{
+        font-size: 20px;
+    }
+    .modal-header-detail{
+        font-size: 10px;
+    }
+    .total-list{
+        display: none;
+    }
+    .total-list-mb{
+        display: block;
+    }
+    .all-pay-list {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 62px 23px;
+    }
+    #card-item-info{
+    width: 93%;
+    border: 2px solid #1ec6b6;
+    padding: 3px;
+    border-radius: 3px;
+    }
+    .modal-label{
+        margin-bottom: 3px;
+    }
+    .select-place-detail{
+        margin-bottom: 18px;
+    }
+    .mb-first{
+    border: 2px solid #1ec6b6;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    }
+    #pay-error{
+        display: none;
+    }
+    .Click-out-img{
+        left: auto;
+        bottom: 0;
+        writing-mode: horizontal-tb;
+    }
+}
+@media only screen and (min-width:617px )and ( max-width: 756px){
+    .modal-card{
+        font-size: 10px;
+        font-weight: 600;
+    }   
+    .card-icon{
+        font-size: 21px;
+    }
+    .card-info{
+        margin-bottom: 8px;
+    }
+    .Click-out-img{
+        left: 0;
+        bottom: auto;
+        top: 180px;
+    }
+    
+}
+@media only screen and (max-aspect-ratio: 1239/842){
+    .Header-img-modal{
+        position: relative;
+        max-width: calc(100% - 16px);
+        width: 51.5em;
+        height: auto;
+}
+}
+@media only screen and (min-aspect-ratio: 1240/842){
+    .Header-img-modal{
+        position: relative;
+        max-height: calc(100% - 16px);
+        width: auto;
+        height: 35.5em;  
+        }
+}
+@media only screen and (min-width:841px) and (min-height: 631px){
+    .Header-img-modal{
+        margin-top: 77px;
+    }
+}
