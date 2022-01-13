@@ -800,6 +800,7 @@ header.header-sm{
     right: 0;
     bottom: 0;
     left: 0;
+    overflow: auto;
     background-color: rgba(0,0,0,0.7);
     display: none;
     align-items: center;
@@ -819,12 +820,22 @@ header.header-sm{
 }
 
 .Header-img-modal{
-    max-width: 960px;
-    margin-top: 77px;
+    position: relative;
+    max-width: calc(100% - 16px);
+    width: 51.5em;
+    margin-top: 8.8125em;
     border-radius: 5px;
     border: 1px solid #053a35;
     box-shadow: 0 0 80px rgba(0, 255, 234, 0.384);
     animation: img-modal-main ease-in-out 0.35s;
+}
+.Click-out-img{
+    position: absolute;
+    left: 0; 
+    text-shadow: 0 0 0.6875em #1ec6b6;
+    color: #1ec6b6;
+    writing-mode:vertical-rl;
+    font-weight: 600;
 }
 .mid-text{
     color: #1ec6b6;

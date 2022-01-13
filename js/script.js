@@ -63,10 +63,11 @@ window.addEventListener('resize', () => {
     
     const outImgs=document.querySelector('.first-modal-container')
     const allImgmodals=document.querySelectorAll('.gallery-modal')
-    const notOutImgs=document.querySelectorAll('.Header-img-modal')
-        for( const notOutImg of notOutImgs) {
-            notOutImg.addEventListener('click',function(event){event.stopPropagation()})
-        }
+    //nổi bọt ảnh
+    //const notOutImgs=document.querySelectorAll('.Header-img-modal')
+    //    for( const notOutImg of notOutImgs) {
+    //        notOutImg.addEventListener('click',function(event){event.stopPropagation()})
+    //    }
     function outimg(){
         for( const allImgmodal of  allImgmodals){
             allImgmodal.classList.remove('open-gallery-modal')
