@@ -67,9 +67,9 @@ body{
    
 }
 .overlay{
-   width: 170%;
+   width: 100%;
    height: 170%;
-   /* position: relative; */
+   /*position: relative;*/
    position: absolute;
    background-image: url(dark-sunset.jpg);
    /* backdrop-filter: blur(1px); */
@@ -248,7 +248,7 @@ body{
    top: 50%;
    right: 7%;
    transform: translateY(-50%);
-   /* transform: translateX(50%); */
+   /*transform: translateX(50%); */
    font-size: 12px;
 }
 
